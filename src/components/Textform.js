@@ -46,7 +46,7 @@ export default function Textform(props) {
     <div className="container my-2" style={{color: props.mode==='dark'? 'white' :'black'}}>
         <h1>Your text summary</h1>
         <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
-        <p>The above text takes {0.003 * text.split(" ").filter((element)=>{return element.length!==0}).length} mnutes to read for an average reader.</p>
+        <p>The above text takes {0.003 * text.split(" ").filter((element)=>{return element.length!==0}).length} minutes to read for an average reader.</p>
         <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} minutes to read this above text if you are a slow reader.</p>
         <h2>Preview</h2>
         <p>{text.length>0? text: "Enter Something to preview it here"}</p>
